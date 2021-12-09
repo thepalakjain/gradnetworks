@@ -1,13 +1,19 @@
-LOCAL COMPUTER:
+LOCAL COMPUTER
+
 	1. To get a list of 15 hashes of randomly chosen passwords, run 
 		$ python generate-hashes.py 
+
 	2. On a new terminal, start the web server 
 		$ python3 http-server.py
+
 	3. On a new terminal, start the manager
 		$ python manager.py
+
 	4. Start as many worker nodes as desired on new terminals
 		$ python worker.py
+
 	5. submit the 15 generated hashes from step 1 to the open webpage one by one, looking at the server terminal to make sure each one is cracked before you send the next input.
+	
 
 GENI
 
