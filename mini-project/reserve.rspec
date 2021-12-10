@@ -1,169 +1,171 @@
 <rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker2" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75562" exclusive="false">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker4" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80854">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
     <sliver_type name="default-vm"/>
     <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29813" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29813" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29813" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29813" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25215" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25215" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25215" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25215" username="fahadf"/>
+      <emulab:console server="pc1.geni.case.edu"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-1" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75569" mac_address="02f82b5abb29">
-      <ip address="10.10.1.2" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <emulab:vnode name="pcvm4-24" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="worker2.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
-  </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="manager" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75559" exclusive="false">
-    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
-    <sliver_type name="default-vm"/>
-    <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29810" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29810" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29810" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29810" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
-      <emulab:imageable available="true"/>
-    </services>
-    <interface client_id="interface-0" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75568" mac_address="02795407f921">
-      <ip address="10.10.1.1" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <interface client_id="interface-2" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75571" mac_address="02ba04850ef1">
-      <ip address="10.10.2.1" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <interface client_id="interface-4" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75574" mac_address="0210dc307b90">
+    <interface client_id="interface-4" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="0223a36d24cc" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80864">
       <ip address="10.10.3.1" netmask="255.255.255.0" type="ipv4"/>
     </interface>
-    <interface client_id="interface-6" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75577" mac_address="02b66ce9feb0">
-      <ip address="10.10.4.1" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <interface client_id="interface-8" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75580" mac_address="020ee47ee2da">
-      <ip address="10.10.5.1" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <interface client_id="interface-10" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75583" mac_address="0281115695d2">
-      <ip address="10.10.6.1" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <emulab:vnode name="pcvm4-18" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="manager.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-26"/>
+    <host name="worker4.mini-project-palak.ch-geni-net.geni.case.edu"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker1" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75561" exclusive="false">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker3" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80853">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
     <sliver_type name="default-vm"/>
     <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29812" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29812" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29812" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29812" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25214" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25214" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25214" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25214" username="fahadf"/>
+      <emulab:console server="pc1.geni.case.edu"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-3" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75572" mac_address="023925466524">
-      <ip address="10.10.2.2" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <emulab:vnode name="pcvm4-23" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="worker1.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
-  </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75560" exclusive="false">
-    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
-    <sliver_type name="default-vm"/>
-    <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29811" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29811" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29811" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29811" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
-      <emulab:imageable available="true"/>
-    </services>
-    <interface client_id="interface-5" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75575" mac_address="02913381435f">
-      <ip address="10.10.3.2" netmask="255.255.255.0" type="ipv4"/>
-    </interface>
-    <emulab:vnode name="pcvm4-22" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="server.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
-  </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker3" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75563" exclusive="false">
-    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
-    <sliver_type name="default-vm"/>
-    <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29814" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29814" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29814" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29814" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
-      <emulab:imageable available="true"/>
-    </services>
-    <interface client_id="interface-7" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75578" mac_address="02365c75c084">
+    <interface client_id="interface-7" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="021d6d6ec2ad" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80868">
       <ip address="10.10.4.2" netmask="255.255.255.0" type="ipv4"/>
     </interface>
-    <emulab:vnode name="pcvm4-25" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="worker3.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-25"/>
+    <host name="worker3.mini-project-palak.ch-geni-net.geni.case.edu"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker4" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75564" exclusive="false">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker2" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80852">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
     <sliver_type name="default-vm"/>
     <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29815" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29815" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29815" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29815" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25213" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25213" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25213" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25213" username="fahadf"/>
+      <emulab:console server="pc1.geni.case.edu"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-9" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75581" mac_address="02b31dbd6977">
+    <interface client_id="interface-9" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="02be0dc97e00" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80871">
       <ip address="10.10.5.2" netmask="255.255.255.0" type="ipv4"/>
     </interface>
-    <emulab:vnode name="pcvm4-26" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="worker4.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-24"/>
+    <host name="worker2.mini-project-palak.ch-geni-net.geni.case.edu"/>
   </node>
-  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker5" component_manager_id="urn:publicid:IDN+instageni.colorado.edu+authority+cm" component_id="urn:publicid:IDN+instageni.colorado.edu+node+pc4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75565" exclusive="false">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker1" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80851">
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
     <sliver_type name="default-vm"/>
     <services>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29816" username="matta"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29816" username="zhangzs"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29816" username="palakj"/>
-      <login authentication="ssh-keys" hostname="pc4.instageni.colorado.edu" port="29816" username="fahadf"/>
-      <emulab:console server="pc4.instageni.colorado.edu"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25212" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25212" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25212" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25212" username="fahadf"/>
+      <emulab:console server="pc1.geni.case.edu"/>
       <emulab:imageable available="true"/>
     </services>
-    <interface client_id="interface-11" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75584" mac_address="0245625ab855">
+    <interface client_id="interface-10" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="02bf5770d428" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80873">
+      <ip address="10.10.6.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-15"/>
+    <host name="worker1.mini-project-palak.ch-geni-net.geni.case.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="worker5" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80855">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25216" username="matta"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25216" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25216" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pc1.geni.case.edu" port="25216" username="fahadf"/>
+      <emulab:console server="pc1.geni.case.edu"/>
+      <emulab:imageable available="true"/>
+    </services>
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="02911a468b00" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80861">
+      <ip address="10.10.2.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-27"/>
+    <host name="worker5.mini-project-palak.ch-geni-net.geni.case.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80850">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm1-10.geni.case.edu" port="22" username="matta"/>
+      <login authentication="ssh-keys" hostname="pcvm1-10.geni.case.edu" port="22" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pcvm1-10.geni.case.edu" port="22" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pcvm1-10.geni.case.edu" port="22" username="fahadf"/>
+      <emulab:console server="pcvm1-10.geni.case.edu"/>
+      <emulab:imageable available="true"/>
+    </services>
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="0201c930606b" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80859">
+      <ip address="10.10.1.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-10"/>
+    <host ipv4="192.171.20.103" name="server.mini-project-palak.ch-geni-net.geni.case.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="manager" component_id="urn:publicid:IDN+geni.case.edu+node+pc1" component_manager_id="urn:publicid:IDN+geni.case.edu+authority+cm" exclusive="false" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80849">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm1-2.geni.case.edu" port="22" username="matta"/>
+      <login authentication="ssh-keys" hostname="pcvm1-2.geni.case.edu" port="22" username="zhangzs"/>
+      <login authentication="ssh-keys" hostname="pcvm1-2.geni.case.edu" port="22" username="palakj"/>
+      <login authentication="ssh-keys" hostname="pcvm1-2.geni.case.edu" port="22" username="fahadf"/>
+      <emulab:console server="pcvm1-2.geni.case.edu"/>
+      <emulab:imageable available="true"/>
+    </services>
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="020292d97e3b" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80858">
+      <ip address="10.10.1.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-3" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="023998b39174" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80862">
+      <ip address="10.10.2.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-5" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="02214eb6247b" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80865">
+      <ip address="10.10.3.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-6" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="0230f223d654" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80867">
+      <ip address="10.10.4.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-8" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="02256ec94473" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80870">
+      <ip address="10.10.5.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-11" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" mac_address="02c6ca19a63d" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80874">
       <ip address="10.10.6.2" netmask="255.255.255.0" type="ipv4"/>
     </interface>
-    <emulab:vnode name="pcvm4-27" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
-    <host name="worker5.mini-project-palak.ch-geni-net.instageni.colorado.edu"/>
+    <emulab:vnode hardware_type="pcvm" name="pcvm1-2"/>
+    <host ipv4="192.171.20.101" name="manager.mini-project-palak.ch-geni-net.geni.case.edu"/>
   </node>
-  <link client_id="link-0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75567">
-    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75568"/>
-    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75569"/>
-    <component_manager name="urn:publicid:IDN+instageni.colorado.edu+authority+cm"/>
+  <link client_id="link-0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80857">
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80858"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80859"/>
+    <component_manager name="urn:publicid:IDN+geni.case.edu+authority+cm"/>
   </link>
-  <link client_id="link-1" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75570">
-    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75571"/>
-    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75572"/>
-    <component_manager name="urn:publicid:IDN+instageni.colorado.edu+authority+cm"/>
+  <link client_id="link-1" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80860">
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80861"/>
+    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80862"/>
+    <component_manager name="urn:publicid:IDN+geni.case.edu+authority+cm"/>
   </link>
-  <link client_id="link-2" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75573">
-    <interface_ref client_id="interface-4" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75574"/>
-    <interface_ref client_id="interface-5" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75575"/>
-    <component_manager name="urn:publicid:IDN+instageni.colorado.edu+authority+cm"/>
+  <link client_id="link-2" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80863">
+    <interface_ref client_id="interface-4" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80864"/>
+    <interface_ref client_id="interface-5" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80865"/>
+    <component_manager name="urn:publicid:IDN+geni.case.edu+authority+cm"/>
   </link>
-  <link client_id="link-3" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75576">
-    <interface_ref client_id="interface-6" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75577"/>
-    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75578"/>
-    <component_manager name="urn:publicid:IDN+instageni.colorado.edu+authority+cm"/>
+  <link client_id="link-3" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80866">
+    <interface_ref client_id="interface-6" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80867"/>
+    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80868"/>
+    <component_manager name="urn:publicid:IDN+geni.case.edu+authority+cm"/>
   </link>
-  <link client_id="link-4" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75579">
-    <interface_ref client_id="interface-8" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75580"/>
-    <interface_ref client_id="interface-9" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75581"/>
-    <component_manager name="urn:publicid:IDN+instageni.colorado.edu+authority+cm"/>
+  <link client_id="link-4" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80869">
+    <interface_ref client_id="interface-8" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80870"/>
+    <interface_ref client_id="interface-9" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80871"/>
+    <component_manager name="urn:publicid:IDN+geni.case.edu+authority+cm"/>
   </link>
-  <link client_id="link-5" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75582">
-    <interface_ref client_id="interface-10" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75583"/>
-    <interface_ref client_id="interface-11" component_id="urn:publicid:IDN+instageni.colorado.edu+interface+pc4:lo0" sliver_id="urn:publicid:IDN+instageni.colorado.edu+sliver+75584"/>
-    <component_manager name="urn:publicid:IDN+instageni.colorado.edu+authority+cm"/>
+  <link client_id="link-5" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80872">
+    <interface_ref client_id="interface-10" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80873"/>
+    <interface_ref client_id="interface-11" component_id="urn:publicid:IDN+geni.case.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.case.edu+sliver+80874"/>
+    <component_manager name="urn:publicid:IDN+geni.case.edu+authority+cm"/>
   </link>
   <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
-    <rs:location country="" latitude="40.006" longitude="-105.267"/>
+    <rs:location country="" latitude="41.50588" longitude="-81.609169"/>
   </rs:site_info>
 </rspec>
