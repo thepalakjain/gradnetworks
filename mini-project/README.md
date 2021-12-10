@@ -17,7 +17,7 @@ LOCAL COMPUTER
 
 GENI
 
-	1. Use generate-hashes.py on your local machine to get a list of 15 hashes of randomly chosen passwords
+	1. Use generate-hashes.py on your local machine to get a list of 15 hashes of randomly chosen passwords. You could also use the hashes in the repository instead. 
 
 	2. Reserve resources on GENI
 		use reserve.rspec
@@ -33,9 +33,24 @@ GENI
 		ssh into each of the 5 worker nodes and retrieve:
 		$ wget https://raw.githubusercontent.com/thepalakjain/gradnetworks/main/mini-project/worker.py
 
-	4. Open the python files on each of the nodes and replace the HOST values with the IP addresses of the relevant machines as found on GENI. If you look at the details of your slice on GENI, you can find the IP address of the nodes.
+	4. Open the python files on each of the nodes and replace the HOST values with the IP addresses of the relevant machines as found on GENI. If you look at the details of your slice on GENI, you can find the IP address of the nodes. There's no need to change the ports.
 
-	5. Run the code like you would on a local machine.
+	5. Run the code like you would on a local machine:
+
+		On the server node, start the server.
+			$ python3 http-server.py
+
+		On the manager node, start the manager.
+			$ python manager.py
+
+		On each worker node, start the worker.
+			$ python worker.py
+
+		Open up a browser manually on your machine and go to "server_ip:8085". This is where you'll be inputting the hashes for the workers to crack.
+
+		Submit the 15 generated hashes from step 1 to the open webpage one by one, looking at the server terminal to make sure each one is cracked before you send the next input.
+
+
 
 GENI FASTER option
 
